@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.11.0 on win32)" generated="20230515 17:32:24.515" rpa="false" schemaversion="3">
+<suite id="s1" name="Android-Automation" source="D:\Projects\QA\android-automation">
+<suite id="s1-s1" name="Steps" source="D:\Projects\QA\android-automation\steps">
+<suite id="s1-s1-s1" name="appDemoSteps" source="D:\Projects\QA\android-automation\steps\appDemoSteps.robot">
+<kw name="Start Session Apps" library="appDemoSettings" type="SETUP">
+<kw name="Set Appium Timeout" library="AppiumLibrary">
+<arg>30</arg>
+<doc>Sets the timeout in seconds used by various keywords.</doc>
+<status status="PASS" starttime="20230515 17:32:25.283" endtime="20230515 17:32:25.284"/>
+</kw>
+<kw name="Open Application" library="AppiumLibrary">
+<arg>${APPIUM_SERVER}</arg>
+<arg>platformName=Android</arg>
+<arg>platformVersion=12</arg>
+<arg>deviceName=Mi 10T Pro</arg>
+<arg>appPackage=io.appium.android.apis</arg>
+<arg>appActivity=io.appium.android.apis.ApiDemos</arg>
+<arg>automationName=UiAutomator2</arg>
+<arg>autoGrantPermissions=true</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |
+| strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
+<status status="PASS" starttime="20230515 17:32:25.285" endtime="20230515 17:32:39.444"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230515 17:32:41.446" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230515 17:32:39.444" endtime="20230515 17:32:41.446"/>
+</kw>
+<status status="PASS" starttime="20230515 17:32:25.282" endtime="20230515 17:32:41.448"/>
+</kw>
+<test id="s1-s1-s1-t1" name="As a user, I want to open Demo apps" line="6">
+<kw name="Page Should Contain Text" library="AppiumLibrary">
+<arg>Accessibility</arg>
+<doc>Verifies that current page contains `text`.</doc>
+<msg timestamp="20230515 17:32:41.948" level="INFO">Current page contains text 'Accessibility'.</msg>
+<status status="PASS" starttime="20230515 17:32:41.451" endtime="20230515 17:32:41.948"/>
+</kw>
+<kw name="Tap Accessibility" library="appDemoSettings">
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${TXT_ACCESSIBILITY}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20230515 17:32:41.955" level="INFO">Clicking element '//android.widget.TextView[@content-desc='Accessibility']'.</msg>
+<msg timestamp="20230515 17:32:42.844" level="INFO">xpath criteria: //android.widget.TextView[@content-desc='Accessibility']</msg>
+<status status="PASS" starttime="20230515 17:32:41.952" endtime="20230515 17:32:42.844"/>
+</kw>
+<status status="PASS" starttime="20230515 17:32:41.951" endtime="20230515 17:32:42.845"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230515 17:32:44.846" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230515 17:32:42.846" endtime="20230515 17:32:44.846"/>
+</kw>
+<kw name="Page Should Contain Text" library="AppiumLibrary">
+<arg>Accessibility Node Provider</arg>
+<doc>Verifies that current page contains `text`.</doc>
+<msg timestamp="20230515 17:32:44.890" level="INFO">Current page contains text 'Accessibility Node Provider'.</msg>
+<status status="PASS" starttime="20230515 17:32:44.847" endtime="20230515 17:32:44.891"/>
+</kw>
+<status status="PASS" starttime="20230515 17:32:41.448" endtime="20230515 17:32:44.893"/>
+</test>
+<test id="s1-s1-s1-t2" name="As a user, I want to open accessibility node provider" line="11">
+<kw name="Tap Accessibility Node Provider" library="appDemoSettings">
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${TXT_node_provider}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20230515 17:32:44.903" level="INFO">Clicking element '//android.widget.TextView[@content-desc='Accessibility Node Provider']'.</msg>
+<msg timestamp="20230515 17:32:45.673" level="INFO">xpath criteria: //android.widget.TextView[@content-desc='Accessibility Node Provider']</msg>
+<status status="PASS" starttime="20230515 17:32:44.900" endtime="20230515 17:32:45.674"/>
+</kw>
+<status status="PASS" starttime="20230515 17:32:44.899" endtime="20230515 17:32:45.674"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230515 17:32:47.677" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230515 17:32:45.676" endtime="20230515 17:32:47.677"/>
+</kw>
+<kw name="Page Should Contain Text" library="AppiumLibrary">
+<arg>Enable TalkBack</arg>
+<doc>Verifies that current page contains `text`.</doc>
+<msg timestamp="20230515 17:32:47.730" level="INFO">Current page contains text 'Enable TalkBack'.</msg>
+<status status="PASS" starttime="20230515 17:32:47.678" endtime="20230515 17:32:47.731"/>
+</kw>
+<kw name="Go Back" library="AppiumLibrary">
+<doc>Goes one step backward in the browser history.</doc>
+<status status="PASS" starttime="20230515 17:32:47.732" endtime="20230515 17:32:48.358"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230515 17:32:50.361" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230515 17:32:48.359" endtime="20230515 17:32:50.361"/>
+</kw>
+<kw name="Page Should Contain Text" library="AppiumLibrary">
+<arg>Accessibility Service</arg>
+<doc>Verifies that current page contains `text`.</doc>
+<msg timestamp="20230515 17:32:50.422" level="INFO">Current page contains text 'Accessibility Service'.</msg>
+<status status="PASS" starttime="20230515 17:32:50.364" endtime="20230515 17:32:50.422"/>
+</kw>
+<status status="PASS" starttime="20230515 17:32:44.896" endtime="20230515 17:32:50.426"/>
+</test>
+<test id="s1-s1-s1-t3" name="As a user, I want to open accessibility service" line="18">
+<kw name="Tap Accessibility Service" library="appDemoSettings">
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${TXT_ACC_SERCIVE}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20230515 17:32:50.436" level="INFO">Clicking element '//android.widget.TextView[@content-desc='Accessibility Service']'.</msg>
+<msg timestamp="20230515 17:32:51.225" level="INFO">xpath criteria: //android.widget.TextView[@content-desc='Accessibility Service']</msg>
+<status status="PASS" starttime="20230515 17:32:50.433" endtime="20230515 17:32:51.226"/>
+</kw>
+<status status="PASS" starttime="20230515 17:32:50.432" endtime="20230515 17:32:51.227"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230515 17:32:53.230" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230515 17:32:51.229" endtime="20230515 17:32:53.230"/>
+</kw>
+<kw name="Page Should Contain Text" library="AppiumLibrary">
+<arg>Enable ClockBack</arg>
+<doc>Verifies that current page contains `text`.</doc>
+<msg timestamp="20230515 17:32:53.284" level="INFO">Current page contains text 'Enable ClockBack'.</msg>
+<status status="PASS" starttime="20230515 17:32:53.232" endtime="20230515 17:32:53.284"/>
+</kw>
+<kw name="Go Back" library="AppiumLibrary">
+<doc>Goes one step backward in the browser history.</doc>
+<status status="PASS" starttime="20230515 17:32:53.286" endtime="20230515 17:32:53.902"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230515 17:32:55.904" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230515 17:32:53.903" endtime="20230515 17:32:55.904"/>
+</kw>
+<kw name="Page Should Contain Text" library="AppiumLibrary">
+<arg>Custom View</arg>
+<doc>Verifies that current page contains `text`.</doc>
+<msg timestamp="20230515 17:32:55.988" level="INFO">Current page contains text 'Custom View'.</msg>
+<status status="PASS" starttime="20230515 17:32:55.906" endtime="20230515 17:32:55.988"/>
+</kw>
+<status status="PASS" starttime="20230515 17:32:50.430" endtime="20230515 17:32:55.990"/>
+</test>
+<test id="s1-s1-s1-t4" name="As a user, I want to open custom view" line="25">
+<kw name="Tap Custom View" library="appDemoSettings">
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${TXT_CUSTOM_VIEW}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20230515 17:32:55.998" level="INFO">Clicking element '//android.widget.TextView[@content-desc='Custom View']'.</msg>
+<msg timestamp="20230515 17:32:56.838" level="INFO">xpath criteria: //android.widget.TextView[@content-desc='Custom View']</msg>
+<status status="PASS" starttime="20230515 17:32:55.995" endtime="20230515 17:32:56.838"/>
+</kw>
+<status status="PASS" starttime="20230515 17:32:55.994" endtime="20230515 17:32:56.838"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230515 17:32:58.842" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230515 17:32:56.840" endtime="20230515 17:32:58.842"/>
+</kw>
+<kw name="Page Should Contain Text" library="AppiumLibrary">
+<arg>Enable TalkBack</arg>
+<doc>Verifies that current page contains `text`.</doc>
+<msg timestamp="20230515 17:32:58.906" level="INFO">Current page contains text 'Enable TalkBack'.</msg>
+<status status="PASS" starttime="20230515 17:32:58.843" endtime="20230515 17:32:58.907"/>
+</kw>
+<kw name="Go Back" library="AppiumLibrary">
+<doc>Goes one step backward in the browser history.</doc>
+<status status="PASS" starttime="20230515 17:32:58.908" endtime="20230515 17:32:59.553"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230515 17:33:01.555" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230515 17:32:59.554" endtime="20230515 17:33:01.555"/>
+</kw>
+<kw name="Go Back" library="AppiumLibrary">
+<doc>Goes one step backward in the browser history.</doc>
+<status status="PASS" starttime="20230515 17:33:01.557" endtime="20230515 17:33:03.214"/>
+</kw>
+<status status="PASS" starttime="20230515 17:32:55.992" endtime="20230515 17:33:03.215"/>
+</test>
+<kw name="Close Session Apps" library="appDemoSettings" type="TEARDOWN">
+<kw name="Close Application" library="AppiumLibrary">
+<doc>Closes the current application and also close webdriver session.</doc>
+<status status="PASS" starttime="20230515 17:33:03.218" endtime="20230515 17:33:03.627"/>
+</kw>
+<status status="PASS" starttime="20230515 17:33:03.217" endtime="20230515 17:33:03.628"/>
+</kw>
+<status status="PASS" starttime="20230515 17:32:24.637" endtime="20230515 17:33:03.628"/>
+</suite>
+<status status="PASS" starttime="20230515 17:32:24.623" endtime="20230515 17:33:03.634"/>
+</suite>
+<status status="PASS" starttime="20230515 17:32:24.531" endtime="20230515 17:33:03.639"/>
+</suite>
+<statistics>
+<total>
+<stat pass="4" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="4" fail="0" skip="0" id="s1" name="Android-Automation">Android-Automation</stat>
+<stat pass="4" fail="0" skip="0" id="s1-s1" name="Steps">Android-Automation.Steps</stat>
+<stat pass="4" fail="0" skip="0" id="s1-s1-s1" name="appDemoSteps">Android-Automation.Steps.appDemoSteps</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

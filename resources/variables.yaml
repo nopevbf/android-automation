@@ -1,0 +1,7 @@
+#started
+APPIUM_SERVER: "http://localhost:4723"
+#locator
+TXT_ACCESSIBILITY: "//android.widget.TextView[@content-desc='Accessibility']"
+TXT_node_provider: "//android.widget.TextView[@content-desc='Accessibility Node Provider']"
+TXT_ACC_SERCIVE: "//android.widget.TextView[@content-desc='Accessibility Service']"
+TXT_CUSTOM_VIEW: "//android.widget.TextView[@content-desc='Custom View']"
