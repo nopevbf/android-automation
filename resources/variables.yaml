@@ -1,7 +1,25 @@
 #started
 APPIUM_SERVER: "http://localhost:4723"
-#locator
+#locator Demo
 TXT_ACCESSIBILITY: "//android.widget.TextView[@content-desc='Accessibility']"
 TXT_node_provider: "//android.widget.TextView[@content-desc='Accessibility Node Provider']"
 TXT_ACC_SERCIVE: "//android.widget.TextView[@content-desc='Accessibility Service']"
 TXT_CUSTOM_VIEW: "//android.widget.TextView[@content-desc='Custom View']"
+
+#locator Dietapp
+FIELD_NAME: id=com.fghilmany.dietmealapp:id/et_name
+FIELD_WEIGHT: "id=com.fghilmany.dietmealapp:id/et_weight"
+FIELD_HEIGHT: "id=com.fghilmany.dietmealapp:id/et_height"
+FIELD_GENDER_ML: "id=com.fghilmany.dietmealapp:id/rb_male"
+FIELD_GENDER_FML: "id=com.fghilmany.dietmealapp:id/rb_female"
+BUTTON_NEXT: "id=com.fghilmany.dietmealapp:id/bt_next"
+BUTTON_FINISH: "com.fghilmany.dietmealapp:id/bt_finish"
+
+#activity locator
+SLEEP: "id=com.fghilmany.dietmealapp:id/rb_rest"
+WRITE: "id=com.fghilmany.dietmealapp:id/rb_very_very_low"
+WASH: "id=com.fghilmany.dietmealapp:id/rb_very_low"
+SCHOOL: "id=com.fghilmany.dietmealapp:id/rb_low_to_medium"
+GARDEN: "id=com.fghilmany.dietmealapp:id/rb_medium"
+SAW: "id=com.fghilmany.dietmealapp:id/rb_heavy"
+HIKE: "id=com.fghilmany.dietmealapp:id/rb_very_heavy"

@@ -12,3 +12,5 @@ Penggunaan Android Studio + VS Code + Appium + Virtual Device akan memakan banya
 ## Robot Framework Setting
 
 1. Install AppiumLibrary menggunakan [pip](https://github.com/nopevbf/Robotframework-Basic)
+
+reference apk: https://github.com/fghilmany/Easy-Diet-App
